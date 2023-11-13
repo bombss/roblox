@@ -238,7 +238,7 @@ for _, item in pairs(replicatedStorage.ViewItems:GetChildren()) do
         table.insert(oreList, tostring(item.Name:gsub("Ore", "")))
     end
     
-    if item.Name:find("Stone") then
+    if item.Name:find("Moonstone") then
         table.insert(oreList, tostring(item.Name:gsub("Moonstone", "")))
     end
     
