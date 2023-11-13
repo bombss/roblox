@@ -234,6 +234,14 @@ MiningSection:addToggle({
 
 local oreList = {}
 for _, item in pairs(replicatedStorage.ViewItems:GetChildren()) do
+    if item.Name:find("Ore") then
+        table.insert(oreList, tostring(item.Name:gsub("Ore", "")))
+    end
+    
+    if item.Name:find("Stone") then
+        table.insert(oreList, tostring(item.Name:gsub("Stone", "")))
+    end
+    
     if item.Name:find("Crystal") then
         table.insert(oreList, tostring(item.Name:gsub("Crystal", "")))
     end
